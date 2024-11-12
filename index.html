@@ -46,12 +46,17 @@
         }
         .gallery img {
             width: 100%;
-            max-width: 280px;  /* Ensures uniform width */
-            height: auto;       /* Maintains original aspect ratio */
+            max-width: 280px;  /* Maintain image proportion */
+            height: auto;
             border-radius: 12px;
             box-shadow: 0px 0px 15px rgba(255, 0, 127, 0.6); /* Magenta glow */
             transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
             filter: brightness(0.8);
+        }
+        /* Custom style for landscape images */
+        .gallery .landscape {
+            max-width: 380px; /* Set a larger width for landscape */
+            height: auto;
         }
         /* Hover effects */
         .gallery img:hover {
@@ -83,7 +88,7 @@
 <body>
     <header>
         <h1>Rishi's Photography Portfolio</h1>
-        <p>Capturing moments one click at a time  and my love Varnika:)</p>
+        <p>Capturing moments one click at a time and to my LOVE VARNIKA :)</p>
     </header>
 
     <div class="gallery">
@@ -94,8 +99,9 @@
         <img src="DSC_0185.jpg" alt="Photo 4">
         <img src="DSC_0541.jpeg" alt="Photo 5">
         <img src="DSC_0540.jpg" alt="Photo 6">
-        <img src="20231221_074646.jpg" alt="Photo 7">
-        <img src="20230705_184222.jpg" alt="Photo 8">
+        <!-- Landscape images -->
+        <img src="20231221_074646.jpg" alt="Photo 7" class="landscape">
+        <img src="20230705_184222.jpg" alt="Photo 8" class="landscape">
     </div>
 
     <footer>
