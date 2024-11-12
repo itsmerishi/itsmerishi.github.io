@@ -49,11 +49,15 @@
             height: auto;
             border-radius: 12px;
             box-shadow: 0px 0px 15px rgba(255, 0, 127, 0.6); /* Magenta glow */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+            filter: brightness(0.8);
         }
+        /* Hover effects */
         .gallery img:hover {
-            transform: scale(1.08); /* Zoom on hover */
+            transform: scale(1.1) rotate(3deg); /* Slight rotation and scaling */
             box-shadow: 0px 0px 30px rgba(8, 253, 216, 0.8); /* Bright glow on hover */
+            filter: brightness(1.1) saturate(1.2); /* Enhances colors on hover */
+            cursor: pointer; /* Change cursor to pointer */
         }
         /* Footer with accent color and glowing links */
         footer {
@@ -78,7 +82,7 @@
 <body>
     <header>
         <h1>Rishi's Photography Portfolio</h1>
-        <p>Capturing moments one click at a time</p>
+        <p>Capturing moments one click at a time and to my love VARNIKA :)</p>
     </header>
 
     <div class="gallery">
@@ -88,6 +92,9 @@
         <img src="DSC_0138.JPG" alt="Photo 3">
         <img src="DSC_0185.jpg" alt="Photo 4">
         <img src="DSC_0541.jpeg" alt="Photo 5">
+        <img src="DSC_0540.jpeg" alt="Photo 6">
+        <img src="20231221_074646.jpg" alt="Photo 7">
+        <img src="0231221_074646.jpg" alt="Photo 8">
     </div>
 
     <footer>
